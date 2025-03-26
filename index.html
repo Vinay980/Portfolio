@@ -42,7 +42,7 @@
   <body class="bg-[#111] text-white font-['Nunito']">
     <section class="flex flex-col justify-between h-screen">
       <header
-        class="z-10 pointer-events-none flex items-center justify-between w-full px-4 mt-4 max-w-screen-xl mx-auto"
+      class="z-10 pointer-events-none flex items-center justify-between w-full px-4 mt-4 max-w-screen-xl mx-auto"
       >
         <img src="./assets/images/name_logo-white.png" alt="logo" />
         <div class="flex gap-4 pointer-events-auto">
@@ -139,7 +139,7 @@
             </p>
             
               <p
-              class="w-[200px] absolute right-1/2 pointer-events-none font-['Merriweather'] italic my-4 md:my-8 "
+              class="max-w-[90%] md:max-w-[60%] lg:max-w-[40%] relative left-1/2 -translate-x-1/2 pointer-events-none font-['Merriweather'] italic my-4 md:my-8 mx-32"
             >
             Hi, I'm a passionate MERN stack developer with a strong foundation in MongoDB, Express.js, React.js, and Node.js. As a fresher, I have worked on real-world projects that showcase my skills in building responsive and dynamic web applications. I enjoy solving problems and continuously learning new technologies to improve my craft.
             </p>
@@ -227,10 +227,10 @@
         </ul>
       </div>
       <div
-        class="mt-16 relative self-center after:content-[''] after:absolute after:w-[2px] after:h-5 after:bg-[#444] after:left-1/2 after:-translate-x-1/2 after:top-[100px]"
+      class="relative self-center after:content-[''] after:absolute after:w-[2px] after:h-5 after:bg-[#444] after:left-1/2 after:-translate-x-1/2 after:top-[100px]"
       >
         <button
-          class="bg-[#4595eb] py-2 px-5 rounded font-extrabold bg-gradient-to-l from-[#1595b6] to-[#1f2667e6] relative hover:scale-110 ease-in-out duration-100 group mb-20"
+        class="bg-[#4595eb] py-2 px-5 rounded font-extrabold bg-gradient-to-l from-[#1595b6] to-[#1f2667e6] relative md:hover:scale-110 ease-in-out duration-100 group mb-20" id="scrollButton"
         >
           Latest Works
 
@@ -707,11 +707,11 @@
               id="name"
               name="name"
               class="bg-gray-50 border-2 outline-none border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#1788ae] focus:border-[#1788ae] block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
-              placeholder="Enter your name"
+              placeholder="Enter your name" required
             />
           </div>
           <label
-            for="email"
+            for="email" 
             class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
             >Your Email</label
           >
@@ -739,7 +739,7 @@
               id="email"
               name="email"
               class="bg-gray-50 border-2 outline-none border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#1788ae] focus:border-[#1788ae] block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
-              placeholder="name@gmail.com"
+              placeholder="name@gmail.com" required
             />
           </div>
           <label
@@ -846,6 +846,17 @@
     </footer>
 
     
+    <script>
+      document.getElementById("scrollButton").addEventListener("click", function () {
+        const targetSection = document.getElementById("target-section");
+        if (targetSection) {
+          window.scrollTo({
+            top: targetSection.offsetTop,
+            behavior: "smooth",
+          });
+        }
+      });
+    </script>
 
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.12.0/matter.min.js"></script>
