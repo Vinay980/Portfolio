@@ -8,7 +8,7 @@ The portfolio is designed to provide an interactive and visually engaging experi
 
 Visit my portfolio:
 
-**https://vinaykumarmahto.app**
+**https://vinaykumarmahto.vercel.app**
 
 ## ✨ Features
 
@@ -98,7 +98,7 @@ I specialize in creating modern user experiences, reusable component systems, fr
 
 ## 🤝 Connect With Me
 
-* Portfolio: https://vinaykumarmahto.app
+* Portfolio: https://vinaykumarmahto.vercel.app
 * LinkedIn: https://linkedin.com/in/vinay980
 * Email: [vinay01mahto@gmail.com](mailto:vinay01mahto@gmail.com)
 
